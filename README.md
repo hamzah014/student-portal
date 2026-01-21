@@ -52,35 +52,13 @@ The system supports **Lecturer** and **Student** roles, enabling secure exam cre
 
 ---
 
-## 📂 Project Structure (Simplified)
-
-```
-├── app/
-│   ├── Models/
-│   ├── Http/Controllers/
-│   ├── Policies/
-├── database/
-│   ├── migrations/
-│   ├── seeders/
-├── resources/
-│   ├── views/
-│   ├── css/
-│   ├── js/
-├── routes/
-│   ├── web.php
-├── public/
-├── README.md
-```
-
----
-
 ## ⚙️ Installation Guide
 
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/online-exam-portal.git
-cd online-exam-portal
+git clone https://github.com/hamzah014/student-portal.git
+cd online-student-portal
 ```
 
 ---
@@ -121,7 +99,7 @@ Update your `.env` file:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=online_exam
+DB_DATABASE=studentportal
 DB_USERNAME=root
 DB_PASSWORD=
 ```
@@ -155,90 +133,9 @@ http://127.0.0.1:8000
 
 ---
 
-## 🔐 Authentication & Roles
+## 📎 System Usage References
 
-### Lecturer
-
-* Create and manage exams
-* Add MCQ and open-text questions
-* Assign exams to classes
-* Set exam duration & availability
-* View student submissions
-
-### Student
-
-* Login securely
-* View assigned exams only
-* Take exams within time limit
-* Submit answers
-
----
-
-## 📝 Exam Workflow
-
-1. **Lecturer**
-
-   * Creates a class
-   * Adds subjects to the class
-   * Creates an exam for a subject
-   * Adds questions (MCQ / Text)
-   * Sets time limit and availability
-
-2. **Student**
-
-   * Logs in
-   * Sees available exams for their class
-   * Starts exam (timer begins)
-   * Submits answers before time expires
-
----
-
-## ⏱️ Time Limit Handling
-
-* Exam timer starts once the student begins the exam
-* Auto-submission occurs when time expires
-* Students cannot reattempt completed exams
-
----
-
-## 🔒 Access Control
-
-* Middleware ensures:
-
-  * Only lecturers can manage exams
-  * Only students can take exams
-* Policy-based authorization for exam access
-* Students can only see exams assigned to their class
-
----
-
-## 🧪 Testing (Optional)
-
-```bash
-php artisan test
-```
-
----
-
-## 🚀 Deployment Notes
-
-* Ensure `APP_ENV=production`
-* Run:
-
-  ```bash
-  php artisan optimize
-  php artisan migrate --force
-  ```
-* Set proper file permissions for:
-
-  * `storage/`
-  * `bootstrap/cache/`
-
----
-
-## 📎 GitHub Repository
-
-> **Public Repository Link:**
+> **Google Drive Link:**
 > 👉 [https://github.com/your-username/online-exam-portal](https://github.com/your-username/online-exam-portal)
 
 ---
@@ -252,6 +149,6 @@ You are free to modify and extend it.
 
 ## 👤 Author
 
-**Faizal**
-Laravel Developer
+**Muhammad Hamzah Bin Mohd Jamal**
+Laravel Full Stack Developer
 📍 Malaysia
