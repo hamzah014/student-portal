@@ -58,7 +58,7 @@ The system supports **Lecturer** and **Student** roles, enabling secure exam cre
 
 ```bash
 git clone https://github.com/hamzah014/student-portal.git
-cd online-student-portal
+cd student-portal
 ```
 
 ---
@@ -136,7 +136,7 @@ http://127.0.0.1:8000
 ## 📎 System Usage References
 
 > **Google Drive Link:**
-> 👉 [https://github.com/your-username/online-exam-portal](https://github.com/your-username/online-exam-portal)
+> 👉 [https://drive.google.com/drive/folders/1kBr0x83hAAXI1IF5Snlw25S4omlAqQAP?usp=sharing](https://drive.google.com/drive/folders/1kBr0x83hAAXI1IF5Snlw25S4omlAqQAP?usp=sharing)
 
 ---
 
