@@ -1,0 +1,25 @@
+<x-admin-layout>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            {{ __('List of Classes') }}
+        </h2>
+    </x-slot>
+    <x-slot name="headerBtn">
+        <a class="btn btn-sm btn-primary" href="{{ route('admin.class.create') }}"><i class="fa fa-plus"></i></a>
+    </x-slot>
+
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg p-5">
+                <div class="table-responsive-md">
+                    {{ $dataTable->table(['class' => 'table table-striped table-bordered custom-class']) }}
+                </div>
+            </div>
+        </div>
+    </div>
+    @push('scripts')
+
+        {{ $dataTable->scripts() }}
+
+    @endpush
+</x-admin-layout>
